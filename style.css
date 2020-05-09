@@ -4,3 +4,21 @@
     color: white;
     background-color: black;
 }
+
+
+header {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.media {
+    margin-top: 100px;
+    flex-basis: 10%;
+}
+
+.logo {
+    flex-basis: 60%;
+}
