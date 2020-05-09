@@ -4,10 +4,12 @@
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 
 header {
+    margin-top: 10px;
     display: flex;
     align-items: stretch;
     justify-content: space-around;
@@ -25,19 +27,23 @@ header {
     flex-basis: 60%;
 }
 
+.logo img {
+    width: 35vw;
+}
+
 nav {
     display: block;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     margin: 0 auto;
-    width: 100%;
-    position: relative;
+    width: 35vw;
 }
+
 
 ul {
 
     list-style-type: none;
-    width: 40%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 
@@ -57,11 +63,26 @@ a {
     height: 50px;
     text-decoration: none;
     display: block;
-    background-color: goldenrod;
+    transition: 0.5s linear;
 }
 
 ul::after {
     content: "";
     display: block;
     clear: both;
+}
+
+a:hover {
+    background-color: goldenrod;
+}
+
+i {
+    font-size: 40px;
+    display: block;
+    transition: 0.5s linear;
+}
+
+i:hover {
+    cursor: pointer;
+    background-color: goldenrod;
 }
