@@ -74,10 +74,12 @@ ul::after {
 
 a:hover {
     background-color: goldenrod;
+    color: black;
+    opacity: 0.8;
 }
 
 i {
-    font-size: 40px;
+    font-size: 60px;
     display: block;
     transition: 0.5s linear;
 }
@@ -85,21 +87,27 @@ i {
 i:hover {
     cursor: pointer;
     background-color: goldenrod;
+    opacity: 0.5;
 }
 
 .images {
-    margin-top: 50px;
+
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+
+
 }
 
 .images img {
     flex-basis: 30%;
     flex-shrink: 0;
+    transition: 0.5s linear;
+    margin-top: 30px;
 }
 
 .images img:hover {
     opacity: 0.5;
+    border: 3px goldenrod solid;
 }
