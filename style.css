@@ -3,7 +3,7 @@
     padding: 0;
     color: white;
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -22,12 +22,11 @@ header {
 }
 
 .media {
-    margin-top: 100px;
-    /* flex-basis: 10%;*/
+    margin-top: 10vh;
+    flex-basis: 10%;
 }
 
 .logo {
-
     flex-basis: 60%;
 }
 
@@ -37,7 +36,7 @@ header {
 
 nav {
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     margin: 0 auto;
     width: 35vw;
@@ -53,15 +52,24 @@ ul {
 
 }
 
+ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 li {
     height: 50px;
     display: block;
     float: left;
     width: 20%;
     line-height: 50px;
-
+    text-transform: uppercase;
     cursor: pointer;
 }
+
+
+
 
 a {
     height: 50px;
@@ -70,17 +78,38 @@ a {
     transition: 0.5s linear;
 }
 
-ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 a:hover {
     background-color: goldenrod;
     color: black;
     opacity: 0.8;
 }
+
+.clock {
+    max-width: 300px;
+    min-width: 300px;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    transition: 0.5s linear;
+
+}
+
+.clock p {
+    font-family: 'Nova Square', cursive;
+    display: block;
+    float: left;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+
+
+.clock::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 
 i {
     font-size: 60px;
@@ -108,7 +137,6 @@ i:hover {
 
 .images img {
     width: 30vw;
-    height: 30vw;
     flex-basis: 30%;
     flex-shrink: 0;
     transition: 0.3s linear;
