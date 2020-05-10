@@ -23,7 +23,7 @@ header {
 
 .media {
     margin-top: 100px;
-    flex-basis: 10%;
+    /* flex-basis: 10%;*/
 }
 
 .logo {
