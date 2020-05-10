@@ -195,13 +195,18 @@ i:hover {
     }
 
 
-    .images img:hover {
-        opacity: 0.5;
-        border: 3px goldenrod solid;
-    }
-
     nav {
         z-index: 1;
+    }
+
+    .images img {
+        flex-basis: 100%;
+        transition: 0.1s linear;
+    }
+
+
+    i {
+        transition: 0.1s linear;
     }
 
 }
@@ -232,17 +237,19 @@ i:hover {
 
     }
 
-
-    .images img:hover {
-        opacity: 0.5;
-        border: 3px goldenrod solid;
-    }
-
     nav {
         z-index: 1;
     }
 
     .images img {
         flex-basis: 100%;
+        transition: 0.1s linear;
     }
+
+
+    i {
+        transition: 0.1s linear;
+    }
+
+
 }
