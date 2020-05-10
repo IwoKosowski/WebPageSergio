@@ -137,7 +137,7 @@ i:hover {
 
 .images img {
     width: 30vw;
-    height: 30vw;
+
     flex-basis: 30%;
     flex-shrink: 0;
     transition: 0.3s linear;
