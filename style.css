@@ -9,11 +9,15 @@
 
 
 header {
-    margin-top: 10px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     align-items: stretch;
     justify-content: space-around;
     flex-wrap: nowrap;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -91,7 +95,9 @@ i:hover {
 }
 
 .images {
-
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -102,10 +108,12 @@ i:hover {
 
 .images img {
     width: 30vw;
+    height: 30vw;
     flex-basis: 30%;
     flex-shrink: 0;
     transition: 0.3s linear;
     margin-top: 30px;
+
 }
 
 .images img:hover {
