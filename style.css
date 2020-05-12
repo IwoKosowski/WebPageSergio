@@ -22,8 +22,15 @@ header {
 }
 
 .media {
-    margin-top: 10vh;
+    width: 160px;
+    height: 60px;
     flex-basis: 10%;
+    max-height: 60px;
+}
+
+.media a {
+    display: block;
+
 }
 
 .logo {
@@ -108,7 +115,7 @@ a:hover {
     max-width: 300px;
     min-width: 300px;
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     right: 5vw;
     transition: 0.5s linear;
 
@@ -281,9 +288,8 @@ i:hover {
         transition: 0.1s linear;
     }
 
-    .mediafooter {
-        display: block;
-    }
+
+
 
     .mediafooter {
         width: 160px;
