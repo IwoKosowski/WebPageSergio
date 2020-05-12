@@ -285,4 +285,26 @@ i:hover {
         display: block;
     }
 
+    .mediafooter {
+        width: 160px;
+        height: 60px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .mediafooter a {
+
+        display: block;
+        text-align: center;
+        float: left;
+    }
+
+    .mediafooter::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+
 }
